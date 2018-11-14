@@ -22,6 +22,12 @@ func StrToInt64(s string) int64 {
 	return d
 }
 
+// StrToInt32 字符串转int32
+func StrToInt32(s string) int32 {
+	d, _ := strconv.ParseInt(s, 10, 32)
+	return int32(d)
+}
+
 // StrToFloat64 字符串转浮点
 func StrToFloat64(s string) float64 {
 	f, _ := strconv.ParseFloat(s, 64)
