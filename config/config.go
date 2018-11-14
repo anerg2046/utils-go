@@ -1,7 +1,7 @@
 package config
 
 import (
-	"anerg/helper"
+	"utils-go/helper"
 
 	"github.com/jinzhu/configor"
 )

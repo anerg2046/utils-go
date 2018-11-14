@@ -5,7 +5,7 @@ import (
 
 	"github.com/jmoiron/sqlx"
 
-	. "anerg/config"
+	. "utils-go/config"
 
 	_ "github.com/go-sql-driver/mysql"
 )
