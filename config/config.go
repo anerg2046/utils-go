@@ -1,8 +1,6 @@
 package config
 
 import (
-	"utils-go/helper"
-
 	"github.com/jinzhu/configor"
 )
 
@@ -18,5 +16,5 @@ var Config = struct {
 }{}
 
 func init() {
-	configor.Load(&Config, helper.GetCurrentDirectory()+"/config/config.yml")
+	configor.Load(&Config, "config/config.yml")
 }
