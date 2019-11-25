@@ -5,7 +5,7 @@ import (
 
 	_ "github.com/go-sql-driver/mysql"
 
-	. "utils-go/config"
+	"github.com/anerg2046/utils-go/config"
 
 	"github.com/jinzhu/gorm"
 )
