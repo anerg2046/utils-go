@@ -5,7 +5,7 @@ import (
 
 	"github.com/jmoiron/sqlx"
 
-	"github.com/anerg2046/utils-go/config"
+	c "github.com/anerg2046/utils-go/config"
 
 	_ "github.com/go-sql-driver/mysql"
 )
@@ -14,7 +14,7 @@ import (
 var Mysql *sqlx.DB
 
 func init() {
-	db, err := sqlx.Connect("mysql", Config.DB.User+":"+Config.DB.Pass+"@tcp("+Config.DB.Host+":"+Config.DB.Port+")/"+Config.DB.Name+"?charset=utf8")
+	db, err := sqlx.Connect("mysql", c.Config.DB.User+":"+c.Config.DB.Pass+"@tcp("+c.Config.DB.Host+":"+c.Config.DB.Port+")/"+c.Config.DB.Name+"?charset=utf8")
 	if err != nil {
 		log.Fatal(err.Error())
 		return
