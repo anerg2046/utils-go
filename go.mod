@@ -1,4 +1,4 @@
-module github.com/anerg2046/utils-go/v2
+module github.com/anerg2046/utils-go
 
 go 1.15
 
@@ -9,4 +9,3 @@ require (
 	gorm.io/driver/mysql v1.0.3
 	gorm.io/gorm v1.20.7
 )
-
