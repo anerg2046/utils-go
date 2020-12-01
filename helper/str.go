@@ -42,7 +42,7 @@ func InterfaceToString(data interface{}) string {
 	} else if reflect.TypeOf(data).String() == "int64" {
 		ret = Int64ToStr(data.(int64))
 	} else if reflect.TypeOf(data).String() == "[]uint8" {
-		ret = B2S(data.([]uint8))
+		ret = Bytes2String(data.([]uint8))
 	} else if reflect.TypeOf(data).String() == "string" {
 		ret = data.(string)
 	} else {
