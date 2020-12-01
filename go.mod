@@ -1,4 +1,4 @@
-module github.com/anerg2046/utils-go
+module github.com/anerg2046/utils-go/v2
 
 go 1.15
 
