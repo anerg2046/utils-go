@@ -65,7 +65,8 @@ func InterfaceToInt64(data interface{}) int64 {
 	return ret
 }
 
-func B2S(bs []uint8) string {
+// Bytes2String []byte转为string
+func Bytes2String(bs []uint8) string {
 	ba := make([]byte, 0, len(bs))
 	for _, b := range bs {
 		ba = append(ba, byte(b))
