@@ -42,7 +42,7 @@ func InterfaceToString(data interface{}) string {
 	} else if reflect.TypeOf(data).String() == "int64" {
 		ret = Int64ToStr(data.(int64))
 	} else if reflect.TypeOf(data).String() == "[]uint8" {
-		ret = B2S(data.([]uint8))
+		ret = Bytes2String(data.([]uint8))
 	} else if reflect.TypeOf(data).String() == "string" {
 		ret = data.(string)
 	} else {
@@ -65,7 +65,8 @@ func InterfaceToInt64(data interface{}) int64 {
 	return ret
 }
 
-func B2S(bs []uint8) string {
+// Bytes2String []byte转为string
+func Bytes2String(bs []uint8) string {
 	ba := make([]byte, 0, len(bs))
 	for _, b := range bs {
 		ba = append(ba, byte(b))
