@@ -1,4 +1,4 @@
-package database
+package utils
 
 import (
 	elastic6 "github.com/olivere/elastic/v6"
