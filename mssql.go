@@ -3,14 +3,14 @@ package utils
 import (
 	"time"
 
-	"gorm.io/driver/mysql"
+	"gorm.io/driver/sqlserver"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
 )
 
-// MysqlConn 数据库连接
-func MysqlConn(dsn string) *gorm.DB {
-	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{
+// MssqlConn 数据库连接
+func MssqlConn(dsn string) *gorm.DB {
+	db, err := gorm.Open(sqlserver.Open(dsn), &gorm.Config{
 		Logger: logger.Default.LogMode(logger.Silent),
 	})
 	if err != nil {
